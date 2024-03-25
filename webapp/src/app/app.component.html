@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="slideshow-container">
+    <div *ngIf="gotImages.length">
+      <img [src]="gotImages[currentImageIndex].url" [style.opacity]="1" [style.width.px]="800" [style.height.px]="600">
+      <p>Remaining Time: {{ countdown }}s</p>
+    </div>
+    <ng-template #noImages>
+      <!-- Display message for empty array -->
+      <p>No images available.</p>
+    </ng-template>
+
+    <ng-container *ngIf="!gotImages || gotImages.length === 0">
+      <!-- Display message for error or empty array -->
+      <p>Sorry, something went wrong. Pls, add new images.</p>
+    </ng-container>
+
+
+  </div>
+
+
+  <div class="management-container">
+    <h3>Add New Image</h3>
+    <div>
+      <input type="text" placeholder="Enter Image URL" [(ngModel)]="newImageUrl">
+      <input type="number" placeholder="Enter Duration" [(ngModel)]="newImageDuration">
+      <button (click)="addImage()">Add</button>
+    </div>
+    <h3>Manage Images</h3>
+    <table>
+      <tr *ngFor="let image of gotImages">
+        <td>
+          <img [src]="image.url" [style.opacity]="1" [style.width.px]="50" [style.height.px]="50">
+        </td>
+        <td>
+          <span>{{ image.url | slice:0:20 }}</span><br>
+          <span>{{ image.duration }}s</span>
+        </td>
+        <td>
+          <button *ngIf="image.id !== undefined" (click)="deleteImage(image.id)">Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+</div>

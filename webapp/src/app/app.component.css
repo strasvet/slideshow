@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.management-container {
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  vertical-align: top;
+}

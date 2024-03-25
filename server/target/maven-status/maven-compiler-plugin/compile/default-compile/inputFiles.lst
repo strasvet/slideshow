@@ -1,0 +1,11 @@
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/model/AddImageResponse.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/model/DeleteImageResponse.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/configuration/SwaggerConfig.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/model/AddImageRequest.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/repository/ImageRepository.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/repository/entity/Image.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/controller/ImageController.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/SlideshowApplication.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/model/DeleteImageRequest.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/service/ImageServiceIntImpl.java
+/home/dsr/Documents/slideshow/server/src/main/java/com/example/slideshow/service/ImageServiceInt.java

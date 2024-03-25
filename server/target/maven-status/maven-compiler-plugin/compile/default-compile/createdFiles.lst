@@ -1,0 +1,12 @@
+com/example/slideshow/controller/ImageController.class
+com/example/slideshow/SlideshowApplication.class
+com/example/slideshow/model/AddImageRequest.class
+com/example/slideshow/repository/entity/Image.class
+com/example/slideshow/model/DeleteImageRequest.class
+com/example/slideshow/service/ImageServiceIntImpl.class
+com/example/slideshow/repository/ImageRepository.class
+com/example/slideshow/model/DeleteImageResponse.class
+com/example/slideshow/model/AddImageRequest$AddImageRequestBuilder.class
+com/example/slideshow/service/ImageServiceInt.class
+com/example/slideshow/model/AddImageResponse$AddImageResponseBuilder.class
+com/example/slideshow/model/AddImageResponse.class

@@ -1,0 +1,26 @@
+version: '3'
+services:
+  server:
+    container_name: server
+    hostname: server
+    image: ${DOCKER_PREFIX}/server:${DOCKER_VERSION:-latest}
+    ports:
+      - 8080:8080
+      - 2222:8080
+    networks:
+      - slideshow-network
+
+  webapp:
+    container_name: webapp
+    hostname: webapp
+    image: ${DOCKER_PREFIX}/webapp:${DOCKER_VERSION:-latest}
+    environment:
+      - API_URL=http://server:8080
+    ports:
+      - 1111:80
+    networks:
+      - slideshow-network
+
+networks:
+  slideshow-network:
+    name: slideshow-network
