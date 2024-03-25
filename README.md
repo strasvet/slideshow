@@ -34,4 +34,5 @@ To build the Docker image for production, execute the following script:
 For add images use url jpg png ext
 web app port is 1111
 backend is 8080
+application url is http://localhost:111
 swagger http://localhost:8080/swagger
