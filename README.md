@@ -2,7 +2,7 @@
 
 slideshow angular app
 
-# Dockerized App README
+# Dockerized App linux
 
 This repository contains the source code for a Dockerized application built with Node.js, Java, and Angular.
 
@@ -30,3 +30,8 @@ To build the Docker image for production, execute the following script:
 ```bash
 ./devops/run_docker/run.sh
 ```
+
+For add images use url jpg png ext
+web app port is 1111
+backend is 8080
+swagger http://localhost:8080/swagger
